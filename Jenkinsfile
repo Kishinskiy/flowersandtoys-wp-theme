@@ -1,9 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('deploy to dev') {
             steps {
-                sh 'mvn --version'
+                withCredentials([usernamePassword(credentialsId: 'FTP_CRED', passwordVariable: 'FTP_PASSWORD', usernameVariable: 'FTP_USERNAME')]) {
+
+                  sh 'ncftpput -R -v -u "FTP_USERNAME" flowersandtoys.ru / readme.txt'
+                  }
             }
         }
     }
