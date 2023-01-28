@@ -5,7 +5,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'FTP_CRED', passwordVariable: 'FTP_PASSWORD', usernameVariable: 'FTP_USERNAME')]) {
 
-                  sh 'ncftpput -R -v -u "FTP_USERNAME" flowersandtoys.ru / readme.txt'
+                  sh 'ncftpput -R -v -u "FTP_USERNAME" -p "FTP_PASSWORD" flowersandtoys.ru / readme.txt'
                   }
             }
         }
