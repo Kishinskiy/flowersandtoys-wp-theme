@@ -57,7 +57,8 @@
                                     <div class="footer__contacts-item">
                                         <img src="<?php bloginfo('template_url'); ?>/assets/img/icons/svg/phone.svg" alt="телефон" class="footer__contacts-logo">
                                         <div class="footer__contacts-tel">
-                                            <a href="tel:+797867834347">+7<?php the_field('contacts_phone_1'); ?></a>
+                                            <a href="tel:+7<?php the_field('contacts_phone_1'); ?>">+7<?php the_field('contacts_phone_1'); ?></a>
+                                            <a href="tel:+7<?php the_field('contacts_phone_2'); ?>">+7<?php the_field('contacts_phone_2'); ?></a>
                                         </div>
                                     </div>
                                     <div class="footer__contacts-item">

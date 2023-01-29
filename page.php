@@ -199,6 +199,13 @@ get_header();
                                             <a href="tel:+7<?php the_field('contacts_phone_1'); ?>">+7<?php the_field('contacts_phone_1'); ?></a>
                                         </div>
                                     </div>
+                                    <div class="contacts__phoneblock">
+                                        Телефон №1
+                                        <div class="contacts__phonewrap">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                            <a href="tel:+7<?php the_field('contacts_phone_2'); ?>">+7<?php the_field('contacts_phone_2'); ?></a>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="contacts__mail">
                                     Или напишите нам на почту
