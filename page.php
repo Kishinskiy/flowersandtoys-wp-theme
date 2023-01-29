@@ -152,7 +152,9 @@ get_header();
                                     <div class="toys__item-title"><?php the_title(); ?></div>
                                     <div class="toys__item-descr">
                                         <!-- <?php the_field('goods_decription'); ?> -->
-                                        <?php get_the_content() ?>
+                                        <?php $content = apply_filters('the_content', get_the_content());
+
+                                            echo $content; ?>
                                     </div>
                                     <?php
                                         $field = get_field('goods_btn');
