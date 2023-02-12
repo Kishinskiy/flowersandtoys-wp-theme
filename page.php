@@ -225,42 +225,4 @@ get_header();
                     </div>
                 </div>
             </div>
-            <!-- <div class="question">
-                <div class="question__text">
-                    Есть вопросы? Напишите нам!
-                </div>
-                <div id="reply" class="minibutton">Написать</div>
-                <div class="question__close">&times</div>
-            </div> -->
-
-            <div class="reply">
-                <div class="reply__body">
-                    <div class="reply__title">
-                        Оставьте ваш вопрос здесь
-                    </div>
-                    <form action="#">
-                        <div class="reply__wrapper">
-                            <div>
-                                <label for="name">Ваше имя <span>*</span></label>
-                                <input name="name" id="name" type="text" required>
-                            </div>
-                        </div>
-                        <div class="reply__wrapper">
-                            <div>
-                                <label for="mail">Email</label>
-                                <input name="mail" id="mail" type="email">
-                            </div>
-                            <div>
-                                <label for="phone">Ваш телефон <span>*</span></label>
-                                <input name="phone" id="phone" type="tel" required>
-                            </div>
-                        </div>
-                        <label for="text">Ваш вопрос <span>*</span></label>
-                        <textarea required name="text" id="text"></textarea>
-                        <button class="minibutton">Отправить</button>
-                        <div class="reply__close">&times</div>
-                    </form>
-                </div>
-            </div>
-
 <?php get_footer(); ?>
